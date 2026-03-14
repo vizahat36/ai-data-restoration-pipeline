@@ -1,37 +1,53 @@
 # ai-data-restoration-pipeline
 
-Project workspace initialized and connected to GitHub.
+Short take-home assignment repository for Kapture CX AI/ML internship.
 
-## Structure
+## What Is Completed
+
+Part A is implemented end-to-end:
+
+- Synthetic messy dataset generation
+- Data cleaning and rejection pipeline
+- Quality analysis report
+- Writeup with assumptions and scaling notes
+
+## Repository Structure
 
 - Part-A
 - Part-B
 - reflections
 
-## How To Run Part A
+## Part A File Structure
 
-From the repository root, run:
+```text
+repo/
+├── part_a/
+│   ├── generate_dataset.py        # dataset generator
+│   ├── raw_conversations.jsonl    # generated messy dataset
+│   ├── clean_data.py              # cleaning pipeline
+│   ├── quality_report.py          # analysis script
+│   ├── cleaned_conversations.jsonl
+│   ├── rejected_conversations.jsonl
+│   └── writeup.md
+```
 
-1. Step 1: Generate dataset
+Note: In this repository, the folder is named `Part-A` (same content as shown above in assignment format).
+
+## Part A Quick Run
+
+Run from repository root:
 
 ```bash
 python Part-A/generate_dataset.py
-```
-
-2. Step 2: Run cleaning pipeline
-
-```bash
 python Part-A/clean_data.py
-```
-
-3. Step 3: Generate quality report
-
-```bash
 python Part-A/quality_report.py
 ```
 
-These scripts implement the full Part A workflow:
+## Part A Files
 
-- `generate_dataset.py` -> data creation
-- `clean_data.py` -> data validation and rejection handling
-- `quality_report.py` -> data quality analysis
+- `Part-A/raw_conversations.jsonl` - generated noisy source dataset
+- `Part-A/clean_data.py` - validation and cleaning pipeline
+- `Part-A/cleaned_conversations.jsonl` - training-ready output
+- `Part-A/rejected_conversations.jsonl` - rejected records with reasons
+- `Part-A/quality_report.py` - summary statistics and quality analysis
+- `Part-A/writeup.md` - assumptions, hardest issue, scaling approach
