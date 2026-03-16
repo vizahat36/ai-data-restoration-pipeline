@@ -102,6 +102,8 @@ Step 20  Training Loss: 5.69
 Step 25  Training Loss: 3.16
 Epoch 1/1 completed
 
+![pb-task1 training output](assest/pb-task1.jpeg)
+
 The `eval.py` script runs predefined customer prompts and evaluates responses using simple heuristic checks.
 
 Each response is validated for:
@@ -114,6 +116,8 @@ Each response is validated for:
 This gives a quick, practical sanity check of behavioral alignment after finetuning.
 
 ### Example Evaluation Output
+
+![pb-task2 evaluation output](assest/pb-task2.jpeg)
 
 
 ## Requirements
