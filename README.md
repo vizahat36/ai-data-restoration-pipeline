@@ -1,5 +1,7 @@
 # AI Data Restoration Pipeline
 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12gOMql8_xZV5TOy7ZRQZMZh11sAhl9eG?usp=sharing)
 Machine learning take-home assignment project focused on building a practical, end-to-end workflow for conversational data preparation and lightweight LLM finetuning.
 
 ## Project Overview
@@ -88,6 +90,18 @@ To run notebook-based finetuning in Google Colab:
 
 ## Evaluation
 
+### Training Output Example
+
+During finetuning, the training loss decreased across steps, indicating that the LoRA adapters successfully learned domain-specific conversational patterns.
+
+Example training log: 
+Step 5   Training Loss: 13.64
+Step 10  Training Loss: 10.81
+Step 15  Training Loss: 8.27
+Step 20  Training Loss: 5.69
+Step 25  Training Loss: 3.16
+Epoch 1/1 completed
+
 The `eval.py` script runs predefined customer prompts and evaluates responses using simple heuristic checks.
 
 Each response is validated for:
@@ -98,6 +112,9 @@ Each response is validated for:
 - Hinglish/Hindi conversational style signals
 
 This gives a quick, practical sanity check of behavioral alignment after finetuning.
+
+### Example Evaluation Output
+
 
 ## Requirements
 
